@@ -9,56 +9,81 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+**Junteng Liu**
+Email: jliugi@connect.ust.hk | GitHub: [Vicent0205](https://github.com/Vicent0205) | [Google Scholar](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ)
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+**Education**
+=======
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Ph.D. in Computer Science, Hong Kong University of Science and Technology (HKUST), 2024-Present
+  * NLP Group, supervised by [Professor Junxian He](https://www.linkedin.com/in/junxianhe/)
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* B.Eng. in Computer Science, Shanghai Jiao Tong University (SJTU), 2020-2024
+  * Zhiyuan Honor Scholarship recipient
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+**Research Experience**
+=======
+
+* Research Intern, MINIMAX, *February 2025 - Present*
+
+* Research Intern, Tencent WXG, *June 2024 - September 2024*
+  * Advisor: Zifei Shan
+
+* Research Intern, Shanghai AI Lab, *June 2023 - December 2023*
+  * Advisor: Prof. Yu Cheng
+
+**Publications**
+=======
+
+*Junteng Liu is the first author on the following publications:*
+
+<ul>
+  {% for post in site.publications reversed %}
+    {% if post.authors contains 'Junteng Liu' %}
+      <li>{% include archive-single-cv.html %}</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+*Co-authored publications:*
+
+<ul>
+  {% for post in site.publications reversed %}
+    {% if post.authors contains 'Liu,' and post.authors contains 'Junteng' != true %}
+      {% unless post.authors contains 'Junteng' %}
+        <li>{% include archive-single-cv.html %}</li>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+</ul>
+
+**Skills**
+=======
+
+* **Programming Languages**: Python, C++, Java
+* **Deep Learning Frameworks**: PyTorch, TensorFlow
+* **NLP**: LLM fine-tuning, RLHF, NER, summarization, translation
+* **ML**: Supervised and unsupervised learning, reinforcement learning
+* **Tools**: Git, Docker, LaTeX, Linux
+
+**Research Interests**
+=======
+
+* Large Language Model Reasoning and Reinforcement Learning
+* Hallucination in Vision-Language Models (VLM)
+* LLM Truthfulness and Interpretability
+
+**Service and Leadership**
+=======
+
+* Peer reviewer for ICML, NeurIPS, EMNLP, ACL, and AAAI conferences
+* Teaching assistant for CS courses at HKUST and SJTU
+* Campus ambassador for SJTU alumni activities
+
+**Contact**
+=======
+
+* jliugi@connect.ust.hk
+* [GitHub](https://github.com/Vicent0205)
+* [Google Scholar](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ)
+* [Twitter/X](https://twitter.com/junteng88716710)
