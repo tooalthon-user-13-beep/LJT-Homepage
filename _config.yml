@@ -1,71 +1,84 @@
-# Welcome to Jekyll!
-#
+# Welcome to Jekyll! 
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the
+# `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Junteng Liu / AI Researcher"  
+title                    : "Junteng Liu - AI Researcher" 
 title_separator          : "-"
-name                     : &name "Junteng Liu"
-description              : &description "Ph.D. student at HKUST NLP Group focusing on LLM reasoning, reinforcement learning, and VLM hallucination."
-url                      : https://tooalthon-user-13-beep.github.io # The base hostname & protocol for your site
-baseurl                  : /LJT-Homepage # the subpath of your site, e.g. /blog
+name                     : "Junteng Liu"
+description              : "First-year Ph.D. at HKUST NLP Group. Researching LLM reasoning, reinforcement learning, and VLM hallucination."
+url                      : "https://tooalthon-user-13-beep.github.io" # The base hostname & protocol for your site e.g. "https://myname.github.io"
+                                                                  # or if you already have some other page hosted on Github then use "https://myname.github.io/[Your Repo Name]" (Can be set to "" if you don't need https)
+baseurl                  : "/LJT-Homepage" # the subpath of your site, e.g. "/blog" 
+                                                           # If you're deploying to https://myname.github.io, you don't need baseurl
 repository               : "tooalthon-user-13-beep/LJT-Homepage"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
+# Site Author - The following control what appear as part of the author content on the side bar
+#               If a field is blank the icon and link will not appear, otherwise it will be shown.
 author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Junteng Liu"
   pronouns         : "he/him"
-  bio              : "First-year Ph.D. candidate at HKUST NLP Group, researching natural language processing, LLM reasoning, reinforcement learning, and VLM hallucination. Previously interned at Shanghai AI Lab, Tencent WXG, and currently at MINIMAX."
+  bio              : "First-year Ph.D. candidate at HKUST NLP Group, researching natural language processing, LLM reasoning, reinforcement learning, and VLM hallucination."
   location         : "Hong Kong"
   employer         : "HKUST"
-  uri              : https://tooalthon-user-13-beep.github.io/LJT-Homepage/
+  uri              : "https://tooalthon-user-13-beep.github.io/LJT-Homepage/"
 
   # Academic websites
-  academia         : # URL
-  arxiv            : https://arxiv.org/search/?query=Junteng+Liu&searchtype=all
+  academia         :
+  arxiv            : "https://arxiv.org/search/?query=Junteng+Liu&searchtype=all"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
-  impactstory      : # URL
-  orcid            : # URL
-  semantic         : # URL
-  ssrn             : # URL
-  pubmed           : # URL
-  researchgate     : # URL
-  scopus           : # URL
-  zotero           : # URL
+  impactstory      :
+  orcid            :
+  semantic         :
+  ssrn             :
+  pubmed           :
+  researchgate     :
+  scopus           :
+  zotero           :
 
   # Repositories and software development
-  bitbucket        : # Username
-  codepen          : # Username
-  dribbble         : # Username
+  bitbucket        :
+  codepen          :
+  dribbble         :
   github           : "Vicent0205"
-  kaggle           : # Username
-  stackoverflow    : # User number or user number and name
+  kaggle           :
+  stackoverflow    :
 
   # Social media
-  bluesky          : # Bluesky username
-  bsky             : "@junteng88716710.bsky.social"
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  pinterest        : # Username
-  telegram         : # URL
-  tumblr           : # Username
+  artstation       :
+  bluesky          : "@junteng88716710.bsky.social"
+  facebook         :
+  flickr           :
+  foursquare       :
+  goodreads        :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         :
+  mastodon         :
+  medium           :
+  pinterest        :
+  soundcloud       :
+  steam            :
+  telegram         :
+  tumblr           :
   twitter          : "junteng88716710"
-  youtube          : # Username
-  zhihu            : # Username
+  vine             :
+  weibo            :
+  wikipedia        :
+  xing             :
+  youtube          :
+  zhihu            :
 
-# Publication Category
+# Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
     title: 'Books'
@@ -75,31 +88,14 @@ publication_category:
     title: 'Conference Papers'
 
 # Site Settings
-talkmap_link             : false
+talkmap_link             : false      #change to true to add link to talkmap on talks page
 talks_venue_prefix       : "Talk at "
 
 # Analytics
 analytics:
-  provider               : "false"
-
-# Defaults
-defaults:
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  google:
+    tracking_id          :
 
 # Reading Files
 include:
@@ -157,7 +153,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Collections
+# These settings control the types of collections used by the template
 collections:
   teaching:
     output: true
@@ -172,19 +168,72 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+# These settings control how pages and collections are included in the site
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
 
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Etc/UTC
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
+timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
@@ -195,6 +244,7 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
+# Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
   - jekyll-gist
@@ -202,3 +252,27 @@ whitelist:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
