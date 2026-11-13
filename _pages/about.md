@@ -1,3 +1,12 @@
+---
+permalink: /
+title: "Junteng Liu — PhD Candidate, HKUST NLP Group"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
+
 # Junteng Liu
 
 ## About Me
