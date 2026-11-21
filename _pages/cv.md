@@ -9,56 +9,50 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+# Junteng Liu
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+Ph.D. candidate at the HKUST NLP Group, advised by Prof. Junxian He. Research interests: LLM reasoning, hallucination in VLMs, truthfulness & interpretability.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Education
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- **Ph.D. in Computer Science** (2024-Present)
+  - Hong Kong University of Science and Technology (HKUST)
+- **B.Eng.** (2020-2024)
+  - Shanghai Jiao Tong University (SJTU)
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Work Experience
+
+- **Research Intern** (February 2025 - Present)
+  - MINIMAX
+
+- **Research Intern** (June 2024 - September 2024)
+  - Tencent WXG
+  - Advisor: Zifei Shan
+
+- **Research Intern** (June 2023 - December 2023)
+  - Shanghai AI Lab
+  - Advisor: Prof. Yu Cheng
+
+## Skills
+
+- **Programming**: Python, PyTorch, Transformers, HuggingFace
+- **ML/AI**: Large Language Models (LLMs), Vision-Language Models (VLMs), Reinforcement Learning, RAG
+- **Research**: Machine Learning, Deep Learning, Model Fine-tuning, Distributed Training
+
+## Publications
+
+- **SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond** (2025) - *arXiv* - [Paper](https://arxiv.org/abs/2504.00000) | [Code](https://github.com/Vicent0205/SynLogic)
+
+- **On the Perception Bottleneck of VLMs for Chart Understanding** (2025) - *arXiv* - [Paper](https://arxiv.org/abs/2503.00000) | [Code](https://github.com/Vicent0205/Vision4Chart)
+
+- **On the Universal Truthfulness Hyperplane Inside LLMs** (2024) - *EMNLP 2024* - [Paper](https://arxiv.org/abs/2406.00000) | [Code](https://github.com/Vicent0205/Universal_Truthfulness_Hyperplane)
+
+- **In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation** (2024) - *ICML 2024* - [Paper](https://arxiv.org/abs/2402.00000)
+
+- **C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models** (2023) - *NeurIPS 2023* - [Paper](https://arxiv.org/abs/2305.08322)
+
+- **Composing Parameter-Efficient Modules with Arithmetic Operations** (2023) - *NeurIPS 2023* - [Paper](https://arxiv.org/abs/2305.00000)
+
+## Awards
+
+- Zhiyuan Honor Scholarship, Shanghai Jiao Tong University
